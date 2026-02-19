@@ -1,0 +1,94 @@
+/* Container */
+.adres-widget {
+  max-width: 350px;
+  margin: 10px auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Map not loaded */
+.adres-widget .map-not-loaded {
+  color: #e74c3c;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Select inputs */
+.adres-widget .adres-select {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.adres-widget .adres-select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.4);
+}
+
+/* Buttons */
+.adres-widget .adres-btn {
+  display: inline-block;
+  padding: 6px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.adres-widget .adres-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Reset button */
+.adres-widget .adres-btn-reset {
+  background-color: #e74c3c;
+}
+
+.adres-widget .adres-btn-reset:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* Loader */
+.adres-widget .loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: adres-spin 1s linear infinite;
+  margin: 10px auto;
+  display: none;
+}
+
+.adres-widget .loaderOn {
+  display: block;
+}
+
+@keyframes adres-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Forms spacing */
+.adres-widget form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

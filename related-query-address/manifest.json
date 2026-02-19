@@ -1,0 +1,20 @@
+{
+  "name": "related-query-address",
+  "label": "Related Query Address",
+  "type": "widget",
+  "exbVersion": "1.17.0",
+  "version": "1.0.0",
+  "author": "GeolabGis",
+  "description": "This is the related query address widget",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "icon": "icon.svg",
+  "dependency": ["jimu-arcgis"],
+  "features": {
+    "support2D": true,
+    "support3D": false
+  },
+  "defaultSize": {
+    "width": 500,
+    "height": 750
+  }
+}
