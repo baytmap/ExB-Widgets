@@ -1,7 +1,3 @@
-Here’s an updated README including your requested details about **coordinate types, examples, and WKIDs**:
-
----
-
 # Custom ArcGIS Experience Builder Widget – Locate Coordinates
 
 This widget allows users to **locate coordinates** on a map, supporting both:
