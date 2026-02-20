@@ -133,5 +133,3 @@ dist-prod
 2. Deploy it to your ArcGIS Enterprise 11.5 environment
 3. Add and use it inside your Experience Builder application
 
-
-Do you want me to do that?
