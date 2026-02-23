@@ -113,7 +113,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
         value={mapType}
       >
         <option value="" disabled selected>
-          Select Map Type
+          Harita Seç
         </option>
         <option value="4326">WGS84 ( Coğrafi )</option>
         <option value="5256">TUREF TM36 ( ITRF )</option>
@@ -139,7 +139,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
           className="adres-btn"
           onClick={() => locate(lat, lon, mapType)}
         >
-          Locate
+          Konuma Git
         </button>
 
         <button
@@ -155,7 +155,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
             }
           }}
         >
-          Reset
+          Sıfırla
         </button>
       </div>
     </div>
