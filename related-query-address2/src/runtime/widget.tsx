@@ -175,7 +175,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
     setSelectedNumarataj(null);
   };
 
-  const handleReset = () => {
+  const handleFullReset = () => {
     // remove all graphics
     mapView?.graphics.removeAll();
 
@@ -186,6 +186,19 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
     if (initialExtent && mapView) {
       mapView.goTo(initialExtent);
     }
+  };
+
+  const handleReset = () => {
+    // remove all graphics
+    mapView?.graphics.removeAll();
+
+    // reset all dropdowns and dependent arrays
+    ilceTemizle();
+
+    // // reset map to original extent
+    // if (initialExtent && mapView) {
+    //   mapView.goTo(initialExtent);
+    // }
   };
 
   const loadIlce = async () => {
@@ -588,27 +601,6 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
   };
 
   // to zoom in without clicking the GIT button
-  // React.useEffect(() => {
-  //   if (selectedIlce == null) return;
-  //   (async () => {
-  //     await loadIlce();
-  //   })();
-  // }, [selectedIlce]);
-
-  // React.useEffect(() => {
-  //   if (selectedYol == null) return;
-  //   (async () => {
-  //     await loadYol();
-  //   })();
-  // }, [selectedYol]);
-
-  // React.useEffect(() => {
-  //   if (selectedMahalle == null) return;
-  //   (async () => {
-  //     await loadMahalle();
-  //   })();
-  // }, [selectedMahalle]);
-
   React.useEffect(() => {
     if (selectedIlce != null) loadIlce();
   }, [selectedIlce]);
