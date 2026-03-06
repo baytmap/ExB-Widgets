@@ -700,12 +700,19 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
       </form>
       <br />
       <form className="pure-form5">
-        <button
+         <button
           type="button"
           className="adres-btn adres-btn-reset"
           onClick={handleReset}
         >
-          Seçimi Temizle
+          Temizle
+        </button>
+        <button
+          type="button"
+          className="adres-btn adres-btn-reset"
+          onClick={handleFullReset}
+        >
+          Adresi Temizle
         </button>
       </form>
     </div>
