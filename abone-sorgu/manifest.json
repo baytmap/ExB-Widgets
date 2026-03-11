@@ -1,0 +1,24 @@
+{
+  "name": "abone-sorgu",
+  "label": "Abone Sorgu",
+  "type": "widget",
+  "exbVersion": "1.17.0",
+  "version": "1.0.0",
+  "author": "GeolabGis",
+  "description": "This is the abone-sorgu widget",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "icon": "icon.svg",
+  "dependency": ["jimu-arcgis"],
+  "features": {
+    "support2D": true,
+    "support3D": false
+  },
+  "defaultSize": {
+    "width": 400,
+    "height": 240
+  },
+  "defaultConfig": {
+    "userCode": "47003",
+    "userPasswd": "9B8ECB1EE1E5E397B8E1E8D8F9E5D3CE9395B68F"
+  }
+}

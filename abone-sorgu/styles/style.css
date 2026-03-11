@@ -1,0 +1,94 @@
+/* Container */
+.adres-widget {
+  max-width: 700px;
+  margin: 10px auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Map not loaded */
+.adres-widget .map-not-loaded {
+  color: #e74c3c;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Loader */
+.adres-widget .loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: adres-spin 1s linear infinite;
+  margin: 10px auto;
+  display: none;
+}
+
+.adres-widget .loaderOn {
+  display: block;
+}
+
+@keyframes adres-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.center-button {
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 500;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #2563eb;
+  color: white;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+
+  display: block;
+  margin: 0 auto; /* 👈 centers the button */
+}
+
+.controls {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.info-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Hover */
+.center-button:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+}
+
+/* Active */
+.center-button:active {
+  transform: translateY(0);
+}
+
+/* Disabled */
+.center-button:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+  transform: none;
+}
